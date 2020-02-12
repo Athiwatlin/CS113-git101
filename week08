@@ -1,0 +1,23 @@
+เรื่อง github
+-ใช้ git Windows--> Command Prompt
+       Mac OS --> Terminal
+-ทำ git ใหม่ทุกครั้งต้อง พิม git init
+-ตรวจสอบสถานะของไฟล์ ว่ามีไฟล์ใดเปลี่ยนแปลงใน git repository หรือป่าว
+    พิม git status
+-เพิ่มไฟล์ พิม git add ตามด้วยชื่อไฟล์
+-ตั้งค่าชื่อเมล
+    พิม  git config user.name "ชื่อ"
+    และ git config user.email "เมล"
+    แต่ถ้าเป็นคอมส่วนตัวต้องพิม --global หลัง config
+- เชื่อม local repositoey กับ github
+    พิม git remote add origin ตามด้วยชื่อลิ้งค์
+หลังจากทำเสร็จแล้ว
+- เก็บไฟล์ พิม git commit -m "ชื่อของหัวข้อไฟล์นั้นๆ"
+- เก็บไว้ที่git hub โดยใช้วิธี push
+    พิม git push origin master
+หลังจากนั้นจะ add ไฟล์ต่างๆเพิ่มก็ทำแค่
+    git add ตามด้วยชื่อไฟล์ที่ต้องการadd
+    git commit -m "ชื่อหัสข้อของไฟล์นั้น"
+    git push origin master
+    เท่านี้
+และลองไปcheack ที่เว็บ git hub ลอง refresh ดูว่ามีไฟล์ใหม่ที่ add ไปขึ้นมั้ย
