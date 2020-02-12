@@ -1,0 +1,15 @@
+การแนะนำเกี่ยวกับภาษา C
+เริ่มจากฟังก์ชัน เช่น
+int main(){
+    มีการใช้ printf("Hello world"); --> จะต้องมีตัว ; ตามหลัง
+    printf("%d %f",20 ,20.222);
+}
+ต้องมี #include <stdio.h> --> จะได้ไม่ขึ้น warning 
+มีการใช้ int --> %d เก็บค่าได้ 4 byte
+       float --> %f เก็บต่าได้ 4 byte
+       double เช่น 25.889999 8 byte
+       long long int --> %lld เก็บค่าได้มาก
+การคอมไพล์ --> gcc ตามด้วยชื่อไฟล์
+การรัน  --> ./a (windows) , ./a.out (Mac)
+char a[] = char array
+char a[5] กำหนดค่า
