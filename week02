@@ -1,0 +1,39 @@
+เกี่ยวกับ Type operater
+การแทนตัวแปร เช่น
+int main(){
+    int x; --> ต้องกำหนดค่าของตัวแปนเสมอๆ
+    x = 10;
+    float y;
+    y = 10.221
+}
+ตัวแปร char เก็บค่าได้แค่ 1 byte
+short เก็บค่าได้ 2 byte
+long int เก็บค่าได้ 8 byte
+0x , 0X = บอกถึงเลขฐาน 16 
+0b , 0B = บอกถึงเลขฐานสอง 
+%c = charactor
+%s = charactor string
+เครื่องหมาย \n --> ขึ้นบรรทัดใหม่
+          \0 --> null
+getchar() = การรับ 1 ตัวจาก stdin
+putchar () = การส่งอักขระออกไป
+เครื่องหมายต่างๆ 
+    +,-,*,/,%
+    >,<,<=,>=,!=
+    && = and || = or
+    n++ = n+=1
+    n== = n-1
+การรับค่ามาทำ
+    int num[20];
+    fgets(num , 20 , stdin);
+    int i = atoi(num);
+การใช้condition
+    if (){
+        else if(){
+            else{
+
+            }
+        }
+    }
+หรือ for(){
+}
