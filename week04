@@ -1,0 +1,20 @@
+เรื่อง function 1 สัปดาห์ไม่มีการเรียนแลป
+รปแบบของการนิยามฟังก์ชัน
+return-value-type function-name( parameter-list )
+{
+    declarations
+    statement
+    statement
+    :
+}
+ตัวอย่างการใช้ฟังก์ชัน หาจำนวนเต็มคู่
+    int isEven(int value){
+        if (value % 2 == 0)
+            return 1;
+        else
+            return 0;
+    }
+การใช้ #include <stdlib.h>
+      #include <math.h> --> sqrt, exp , log
+การใช้ recursion คือการเรียกซ้ำ เมื่อมีการเรียกใช้ตนเอง โปรแกรมจะส่งสำเนาค่าตัวแปรต่างๆ ภายในฟังก์ชันอีกชุด
+โดยเป็นอิสระจาการถูกเรียกในครั้งก่อนหน้า
