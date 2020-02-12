@@ -1,0 +1,28 @@
+เรื่อง pointer
+    เครื่องหมาย & คือ address operater ใช้หาค่าตำแหน่งหน่วยความจำ
+    เช่น p = &a;
+    เครื่องหมาย * คือ dereferencing operator ใช้ในการเข้าถึงข้อมูลที่ถูกอ้างอิงโดยค่าตำแหน่งในหน่วยความจำ
+    เช่น y = *ip;
+    array และ pointer
+        a และ &a[0] มีค่าเท่ากัน
+        เพราะ a[i] อ้างถึงข้อมูลตัวที่ i ซึงใน array a ข้อมูลตัวแรกคือ a[0]
+        เหมือนกับ *(a+i) และ a[i] บอกถึงนิพจน์เดียวกัน
+การใช้ malloc() --> การจองพื้นที่ในหน่วยความจำ
+ซึ่งถ้าหากหน่วยความจำเต็ม ที่ไม่พอสำหรับการจอง จะส่งค่า null กลับมา
+ตัวอย่าง 
+    #include <stdlib.h>
+    void *malloc(size_t n);
+
+int addTwenty(int *n){
+    *n += 20;
+    return 1; --> จะช่วย check ว่า ทำงานจบหรือป่าว
+int main(){
+    int number[] = {1,2,3,4,5};
+    int n = 5;
+    addTen(&number[0], n); --> จะช่วยส่งด้วยaddress รับด้วยpointer = pass by reference
+    for (int i = 0; i < n; i++)
+    {
+
+การใช้ scanf คือการน้ำข้อมูลเข้า ตรงข้ามกับ printf ที่ทำงานตรข้ามกัน
+    เช่น int input;
+        scanf("%d", &input);
