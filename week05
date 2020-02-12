@@ -1,0 +1,24 @@
+เรื่อง function & program 2
+local variables
+    ตัวแปรที่ประกาศอยู่ในบล๊อก ภายในตัวแปรฟังก์ชัน,พารามิเตอร์ของฟังก์ชันจะเป็นตัวแปร local 
+    จะสามรถถูกใช้งานได้เพียงภายในฟังก์ชันที่ถูกประกาศ
+global variable
+    ตัวแปรืี่ถูกประกาศไว้นอกฟังก์ชันเป็นตัวแปร global ซึ่งสามารถถูกเข้าถึงได้ รวมถึงฟังก์ชัน main
+    หากตัวแปร local กับ global มีชื่อซ้ำกัน การแก้ไขค่าในตัวแปร local จะไม่ได้มีผลกระทบ ของ global
+
+การใช้ make --> ใช้ในการสร้าง object file executable file
+int addTwenty(); --> เป็นการนิยามfucntion ซึ่งไม่มีการประกาศตัวแปร แต่จะไปเปลี่ยนค่าในglobalแทน
+เช่น
+    int x = 2000;
+    int main(){
+        int x; >> x = 982934839 จะต้องกำหนดค่าเริ่มต้นให้ตัวแปรlocalเสมอ
+        int x = 90; --> local scope
+        int y = addTen(x);
+    printf("addTen in main = %d\n" , y);
+    printf("addTwenty in main = %d\n" , addTwenty());
+    }
+
+int addTwenty(){  --> global จะหาจากที่เรียกใช้ขึ้นไป
+    x += 20;
+    return x;
+}
