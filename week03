@@ -1,0 +1,43 @@
+เรื่อง control flow
+การใช้ switch --> ใช้ในการตรวจสอบเงื่อนไข
+switch (expression) {
+    case const-expr:
+        statements
+    case const-expr:
+        statements
+    default: --> จะมีก็ได้ไม่มีก็ได้
+    statements
+}
+การใช้ลูป while
+    expr1;
+    while (expr2) {    
+        statement
+        expr3;
+    }
+    ซึ่งสามารถใช้ในfor ได้เช่น
+        for (expr1; expr2; expr3)
+            statement 
+            ซึ่งขะลดบรรทัดลงจากลูป while
+            และถ้าไม่มี expr สามารถทำแบบนี้ได้ --> for (;;) {
+การใช้ลูป do while
+    do{
+        stament
+    while (expression); --> ะทำงานเรื่อยๆจนกว่า expression จะมีค่าความจริงเป็นเท็จ
+    }
+ break และ continue --> จะช่สวยการควบคุมการทำงานมากขึ้น
+  ส่วน break ช่วยการหลุดออกจาก ลูปต่างๆ
+int addTwenty(); --> เป็นการนิยามfucntion ซึ่งไม่มีการประกาศตัวแปร แต่จะไปเปลี่ยนค่าในglobalแทน
+เช่น
+    int x = 2000;
+    int main(){
+        int x; >> x = 982934839 จะต้องกำหนดค่าเริ่มต้นให้ตัวแปรlocalเสมอ
+        int x = 90; --> local scope
+        int y = addTen(x);
+    printf("addTen in main = %d\n" , y);
+    printf("addTwenty in main = %d\n" , addTwenty());
+    }
+
+int addTwenty(){  --> global จะหาจากที่เรียกใช้ขึ้นไป
+    x += 20;
+    return x;
+}
