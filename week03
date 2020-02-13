@@ -26,18 +26,3 @@ switch (expression) {
     }
  break และ continue --> จะช่สวยการควบคุมการทำงานมากขึ้น
   ส่วน break ช่วยการหลุดออกจาก ลูปต่างๆ
-int addTwenty(); --> เป็นการนิยามfucntion ซึ่งไม่มีการประกาศตัวแปร แต่จะไปเปลี่ยนค่าในglobalแทน
-เช่น
-    int x = 2000;
-    int main(){
-        int x; >> x = 982934839 จะต้องกำหนดค่าเริ่มต้นให้ตัวแปรlocalเสมอ
-        int x = 90; --> local scope
-        int y = addTen(x);
-    printf("addTen in main = %d\n" , y);
-    printf("addTwenty in main = %d\n" , addTwenty());
-    }
-
-int addTwenty(){  --> global จะหาจากที่เรียกใช้ขึ้นไป
-    x += 20;
-    return x;
-}
